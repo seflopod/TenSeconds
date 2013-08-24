@@ -20,7 +20,7 @@ public class ButtonBehaviour : MonoBehaviour
 		
 		if(_mouseDownOnMe && Input.GetMouseButtonUp(LEFT_MOUSE_BUTTON))
 		{
-			GameManager.Instance.Clicked(yesButton);
+			GameManagerBehaviour.Instance.Clicked(yesButton);
 			transform.localScale = Vector3.one;
 			_mouseDownOnMe = false;
 		}

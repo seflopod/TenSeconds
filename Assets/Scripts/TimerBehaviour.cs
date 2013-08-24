@@ -17,7 +17,7 @@ public class TimerBehaviour : MonoBehaviour {
 		int dispTime = Mathf.CeilToInt(_timeRemaining);
 		_guiText.text = string.Format("0:{0:00}",dispTime);
 		if(_timeRemaining <= 0.0f)
-			GameManager.Instance.GameOver(false);
+			GameManagerBehaviour.Instance.GameOver();
 	}
 	
 	public void Reset()
