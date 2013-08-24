@@ -23,6 +23,7 @@ public class ButtonBehaviour : MonoBehaviour
 			GameManagerBehaviour.Instance.Clicked(yesButton);
 			transform.localScale = Vector3.one;
 			_mouseDownOnMe = false;
+			gameObject.audio.Play();
 		}
 		else if(!_mouseDownOnMe && Input.GetMouseButtonDown(LEFT_MOUSE_BUTTON))
 		{

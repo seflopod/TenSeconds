@@ -151,4 +151,5 @@ public class GameManagerBehaviour : Singleton<GameManagerBehaviour>
 		GUIText text = ((GameObject)GameObject.FindGameObjectWithTag("result_text")).GetComponent<GUIText>();
 		text.text = msg;
 	}
+	//http://db.tt/2I052HCr
 }
